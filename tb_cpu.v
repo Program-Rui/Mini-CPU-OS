@@ -93,15 +93,15 @@ module tb_cpu;
         #10 reset_n = 1;
 
         // Simulate Time
-        
+        /*
         #(timer*10); 
         // 觸發中斷 (Trigger Interrupt)
         $display("!!! IRQ TRIGGERED !!! Time: %t", $time);
         irq = 1;        // 拉高訊號
         #20;            // 維持一下 (確保 CPU 在某個 cycle 抓到)
         irq = 0;        // 放開訊號 (不然 CPU 會一直重複進中斷)
-
-        #300;
+        */
+        #3000;
 
         begin : dump_mem
             integer file_id;
